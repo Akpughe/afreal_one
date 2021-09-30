@@ -47,9 +47,20 @@ a {
   justify-content: center;
   align-items: center;
   padding: 12px 39px;
-  width: 226px;
+  width: fit-content;
   height: 44px;
   background: #fafbfc;
+  border-radius: 8px;
+}
+.b_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 39px;
+  width: fit-content;
+  height: 44px;
+  background: #4c89b5;
   border-radius: 8px;
 }
 
@@ -62,6 +73,15 @@ a {
   margin-left: 5px;
 }
 
+.b_button_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-left: 5px;
+}
 .sign_body {
   display: flex;
   justify-content: center;
@@ -284,7 +304,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  top: 20px;
+  top: 22px;
   line-height: 100%;
   transform: translateY(-50%);
   color: #aaa;
@@ -376,4 +396,30 @@ a {
 
 .forgot_p:hover {
   color: #4c89b5 !important;
+}
+
+/* home */
+
+.li_text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #a2a2a2;
+  text-transform: uppercase;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.active {
+  color: white;
+}
+
+.li_text:focus {
+  color: #ffffff;
+}
+
+.li_text:hover {
+  color: #a2a2a2;
 }
