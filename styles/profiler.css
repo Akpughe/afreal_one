@@ -1,0 +1,121 @@
+.navbar-profiler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  background: #ffffff;
+  box-shadow: 0px 8px 12px rgba(17, 17, 17, 0.04);
+  padding: 0px 100px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.user_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.0175em;
+  color: #323b4b;
+}
+
+.company_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #b0b7c3;
+}
+
+.content {
+  padding: 0px 50px;
+}
+
+.hi {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4e5d78;
+}
+
+.welcome {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #4e5d78;
+}
+
+.message {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b0b7c3;
+}
+
+.outer_rect {
+  width: fit-content;
+  height: 187px;
+  background: #f3f3f3;
+  border-radius: 16px;
+}
+
+.inner_card {
+  width: 386px;
+  height: 135px;
+  background: #ffffff;
+  box-shadow: 0px 12px 16px rgba(17, 17, 17, 0.04);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  margin-right: 25px;
+}
+
+.inner_card_text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #8a94a6;
+  margin-bottom: 5px;
+}
+
+.inner_card_fig {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  color: #4e5d78;
+}
+
+.card_pads {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 25px;
+  /* padding: 20px 20px; */
+}
