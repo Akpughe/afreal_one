@@ -26,13 +26,37 @@
           <span class="b_button_text"> LOG IN </span>
         </a>
       </div>
-      <div class="nav_icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="#ffffff" viewBox="0 0 24 24" stroke="#ffffff">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <div onclick="myFunction()" class="nav_icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="#ffffff"
+          viewBox="0 0 24 24"
+          stroke="#ffffff"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
       </div>
     </nav>
     <!-- end navbar -->
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <div id="myLinks">
+        <a class="li_text active">Home</a>
+        <a class="li_text">about</a>
+        <a class="li_text">how it works</a>
+        <a class="li_text">get in touch</a>
+        <a style="margin: 0px 30px;" class="b_button" href="/login.html">
+          <span class="b_button_text"> LOG IN </span>
+        </a>
+      </div>
+    </div>
 
     <div class="hero">
       <div class="hero_l">
@@ -205,16 +229,28 @@
       </div>
     </div>
     <script>
-     var myNav = document.getElementById("nav");
+      var myNav = document.getElementById('nav');
 
-window.onscroll = function() {
-  "use strict";
-  if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
-    myNav.classList.add("scroll");
-  } else {
-    myNav.classList.remove("scroll");
-  }
-};
+      window.onscroll = function () {
+        'use strict';
+        if (
+          document.body.scrollTop >= 280 ||
+          document.documentElement.scrollTop >= 280
+        ) {
+          myNav.classList.add('scroll');
+        } else {
+          myNav.classList.remove('scroll');
+        }
+      };
+
+      function myFunction() {
+        var x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
     </script>
   </body>
 </html>

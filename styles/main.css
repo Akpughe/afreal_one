@@ -717,4 +717,51 @@ a {
     margin-bottom: 20px;
     width: fit-content;
   }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  .topnav #myLinks {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: none;
+    transition: 0.5s;
+
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .li_text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    margin: 0px 20px;
+    cursor: pointer;
+  }
+  .active {
+    color: white;
+  }
+  
+  .li_text:focus {
+    color: #ffffff;
+  }
+  
+  .li_text:hover {
+    color: #a2a2a2;
+  }
 }
