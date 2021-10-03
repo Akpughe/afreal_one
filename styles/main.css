@@ -32,8 +32,8 @@ a {
 }
 
 .scroll {
-  background-color: #222 ;
-  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) ;
+  background-color: #222;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 }
 
 .nav-logo {
@@ -564,6 +564,66 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
+.prop_dev {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 50px;
+  margin-top: 75px;
+}
+
+.prop_div {
+  flex: 1;
+  display: flex;
+  margin-right: 30px;
+}
+
+.prop_div ul {
+  list-style: none;
+}
+
+.prop_div li {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.li_div {
+  padding: 0px 10px;
+}
+
+.li_div h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  font-size: 16px;
+}
+
+.li_div p {
+  font-family: 'Sora', sans-serif;
+  color: #6c757d;
+  font-size: 14px;
+}
+.p_and_btn {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img_cover{
+  width: 400px;
+  flex: 1
+}
+
+.li_div_img{
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  object-position: 0 0;
+}
+
 @media screen and (min-width: 768px) {
   .nav_icon {
     display: none;
@@ -650,7 +710,6 @@ a {
     padding-top: 50px;
   }
 
-
   .hero_l h1 {
     font-family: Sora;
     font-style: normal;
@@ -725,15 +784,14 @@ a {
     width: 100%;
     transition: 0.5s;
   }
-  
+
   .topnav #myLinks {
     margin-top: 90px;
     margin-bottom: 20px;
     display: none;
     transition: 0.5s;
-
   }
-  
+
   .topnav a {
     color: white;
     padding: 14px 16px;
@@ -756,12 +814,42 @@ a {
   .active {
     color: white;
   }
-  
+
   .li_text:focus {
     color: #ffffff;
   }
-  
+
   .li_text:hover {
     color: #a2a2a2;
+  }
+
+  .prop_dev{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 20px;
+  margin-top: 75px;
+  }
+
+  .p_and_btn {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .img_cover{
+    width: 200px;
+    flex: 1
+  }
+
+  .li_div_img{
+    width: 290px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: 0 0;
   }
 }
