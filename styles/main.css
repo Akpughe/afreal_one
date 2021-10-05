@@ -776,6 +776,10 @@ width: 500px;
 
     color: #a2a2a2;
   }
+
+  .address{
+    width: 500px;
+  }
 }
 /* mobile */
 @media screen and (max-width: 768px) {
