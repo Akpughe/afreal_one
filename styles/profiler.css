@@ -252,6 +252,22 @@ input {
   letter-spacing: 0.01em;
   color: #ffffff;
 }
+.button_p {
+  background: #F3F3F3;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 20px 115px;
+  color: white;
+  border: none;
+  /* text */
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #B0B7C3;
+}
 
 /* mobile */
 @media screen and (max-width: 768px) {
