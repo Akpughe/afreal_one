@@ -18,6 +18,20 @@ a {
 }
 
 .navbar-header {
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; */
+  display: flex;
+  /* background: #343a40; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 70px;
+  z-index: 99;
+}
+
+.landing-navbar{
   position: fixed;
   top: 0;
   right: 0;
@@ -765,7 +779,7 @@ width: 500px;
 }
 /* mobile */
 @media screen and (max-width: 768px) {
-  .navbar-header {
+  .landing-navbar {
     position: fixed;
     top: 0;
     right: 0;
