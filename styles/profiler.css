@@ -310,18 +310,10 @@ input {
     height: 124px;
   }
 
-  .button_cover {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    padding-top: 16px;
-    padding-bottom: 50px;
-  }
-
   .button_ {
     background: #4c89b5;
     border-radius: 8px;
-    padding: 20px 100px;
+    padding: 20px 50px;
     color: white;
     border: none;
     /* text */
@@ -334,17 +326,30 @@ input {
     color: #ffffff;
   }
 
+  .button_p {
+    background: #F3F3F3;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 20px 35px;
+    color: white;
+    border: none;
+    /* text */
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #B0B7C3;
+  }
+
   .button_cover {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     margin-top: 20px;
     padding-top: 16px;
     padding-bottom: 50px;
-  }
-
-  .button_cover .button_{
-    margin-top: 10px;
   }
 
   .outer_rect{

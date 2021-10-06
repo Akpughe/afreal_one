@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('http://fonts.cdnfonts.com/css/airbnb-cereal-app');
+
 html,
 body {
   padding: 0;
@@ -31,7 +33,7 @@ a {
   z-index: 99;
 }
 
-.landing-navbar{
+.landing-navbar {
   position: fixed;
   top: 0;
   right: 0;
@@ -666,18 +668,18 @@ a {
   margin-bottom: 200px;
 }
 
-.trusted_comp{
+.trusted_comp {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.trusted_comp img{
+.trusted_comp img {
   margin-bottom: 20px;
 }
 
-.loc{
+.loc {
   display: flex;
   padding: 70px 20px;
   flex-direction: column;
@@ -688,14 +690,14 @@ a {
   width: 100%;
 }
 
-.loc p{
+.loc p {
   font-family: 'Sora', sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.git{
+.git {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -704,31 +706,128 @@ a {
   border-top: 0.1px solid rgba(255, 255, 255, 0.309);
 }
 
-.git_content{
+.git_content {
   color: white;
   padding: 30px 50px;
 }
 
-.git_content p{
+.git_content p {
   font-family: 'Sora', sans-serif;
   letter-spacing: 4.7px;
   font-size: 12px;
   text-transform: uppercase;
 }
 
-.git_content h4{
+.git_content h4 {
   font-family: 'Sora', sans-serif;
-line-height: 1.25;
-font-weight: 400;
-width: 500px;
+  line-height: 1.25;
+  font-weight: 400;
+  width: 500px;
 }
 
-.git_img{
+.git_img {
   border-radius: 40px;
   width: 600px;
 }
 
-.footer{
+.card_body {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+  border-radius: 20px;
+  width: 323px;
+  height: 524px;
+  margin-right: 50px;
+}
+
+.card_inner_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+  border-radius: 12px;
+  width: 69px;
+  height: 81px;
+}
+
+.prop_price {
+  font-family: 'Airbnb Cereal App', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  color: #4c89b5;
+
+  margin-top: 20px;
+}
+
+.prop_address {
+  font-family: 'Airbnb Cereal App', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.0175em;
+  color: #8a94a6;
+  /* margin-top: -25px; */
+}
+
+.prop_spec {
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #8a94a6;
+
+  margin-top: 5px;
+}
+
+.choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.fin_status {
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  color: #8a94a6;
+}
+
+.mortgage {
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  color: #528951;
+}
+
+.choose_me {
+  border: 1px solid #4c89b5;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px 30px;
+  /* text */
+  font-family: Airbnb Cereal App;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #4c89b5;
+}
+
+.footer {
   font-family: 'Sora', sans-serif;
 
   padding: 20px 20px;
@@ -777,8 +876,14 @@ width: 500px;
     color: #a2a2a2;
   }
 
-  .address{
+  .address {
     width: 500px;
+  }
+
+  .major_slider_body {
+    background: white;
+    margin: 50px 0;
+    margin-left: 100px;
   }
 }
 /* mobile */
@@ -990,7 +1095,7 @@ width: 500px;
     margin-bottom: 200px;
   }
 
-  .git{
+  .git {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1000,25 +1105,31 @@ width: 500px;
     border-top: 0.1px solid rgba(255, 255, 255, 0.309);
   }
 
-  .git_content{
+  .git_content {
     color: white;
     padding: 30px 20px;
   }
 
-  .git_content h4{
+  .git_content h4 {
     font-family: 'Sora', sans-serif;
-  line-height: 1.25;
-  font-weight: 400;
-  width: 100%;
+    line-height: 1.25;
+    font-weight: 400;
+    width: 100%;
   }
 
-  .git_img_div{
+  .git_img_div {
     display: flex;
     justify-content: center;
   }
 
-  .git_img{
+  .git_img {
     border-radius: 40px;
     width: 350px;
+  }
+
+  .major_slider_body {
+    background: white;
+    margin: 50px 0;
+    margin-left: 30px;
   }
 }
