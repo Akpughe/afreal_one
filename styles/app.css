@@ -164,6 +164,7 @@ td {
   }
   .res_table_cover {
     padding: 0px 40px;
+    margin-top: 20px;
   }
 
   .res_table {
@@ -171,8 +172,8 @@ td {
     padding: 30px 30px;
   }
 
-  .res_table_{
-      margin-top: 20px;
+  .res_table_ {
+    margin-top: 20px;
   }
 
   .res_table_label {
@@ -184,9 +185,8 @@ td {
     color: #b0b7c3;
   }
 
-  .res_info{
+  .res_info {
     margin-top: 10px;
-
   }
 
   .res_table_data {
@@ -197,6 +197,27 @@ td {
     line-height: 24px;
     color: #4e5d78;
     margin-top: 10px;
+  }
 
+  .ntl_ {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4e5d78;
+  }
+  .upload_text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #4c89b5;
+  }
+  .upload_text:hover {
+    color: #4c89b5;
   }
 }
