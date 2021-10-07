@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('http://fonts.cdnfonts.com/css/airbnb-cereal-app');
+
+.app_head {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #4e5d78;
+}
+
+.app_para {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b7c3;
+}
+
+.table_cover {
+  padding: 0px 40px;
+}
+
+thead {
+  border-top: 1px solid #f3f3f3 !important;
+  background-color: white !important;
+  height: 62px;
+  border-bottom: transparent !important;
+  border-style: none !important;
+  padding: 10px 0px;
+}
+
+tr {
+  border-style: none !important;
+  height: 70px !important;
+}
+
+th {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b7c3;
+  padding: 20px 10px !important;
+}
+
+td {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4e5d78;
+  padding: 20px 10px !important;
+}
+
+.pill_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 130px;
+  height: 28px;
+  background: rgba(255, 166, 61, 0.1);
+  border-radius: 8px;
+  /* text */
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffab00;
+}
+
+.action {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8a94a6;
+}
