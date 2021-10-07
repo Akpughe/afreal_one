@@ -20,6 +20,13 @@
   /* width: 100%; */
   padding: 0px 40px;
 }
+.card_container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* width: 100%; */
+  padding: 0px 40px;
+}
 
 .card_details {
   display: flex;
@@ -321,9 +328,104 @@
 
 /* mobile */
 @media screen and (max-width: 768px) {
+  .cr_cover {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+  }
   .cr_body_cover {
     background: white;
     border-radius: 16px;
     width: auto;
+    height: fit-content;
+    margin-right: 0px;
+  }
+  .start-here {
+    margin: 0 auto;
+    /* margin-left: 220px; */
+    margin-top: 100px;
+  }
+  .req_prop {
+    padding: 20px 30px;
+  }
+  .carousel-inner {
+    /* border-radius: 16px; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: auto !important;
+  }
+
+  .property_specs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+
+  .cr_body_cover2 {
+    background: white;
+    border-radius: 16px;
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px 0px;
+  }
+
+  .card_container2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+
+  .card_one_white {
+    width: 100%;
+    height: 147px;
+    background: #ffffff;
+    box-shadow: 0px 12px 16px rgba(17, 17, 17, 0.04);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 15px;
+    flex: 1;
+  }
+
+  .card_one {
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    width: 234px;
+    height: 100px;
+    background: linear-gradient(135deg, #99caed 0%, #4c89b5 100%);
+    border-radius: 20px;
+    margin-right: 0px;
+    flex: 1;
+  }
+  .card_two {
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    width: 234px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-right: 0px;
+    margin-top: 15px;
+    flex: 1;
+  }
+
+  .card_three {
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    width: 234px;
+    height: 100px;
+    background: #6fcf97;
+    border-radius: 20px;
+    margin-top: 15px;
+    flex: 1;
   }
 }

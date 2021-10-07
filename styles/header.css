@@ -14,5 +14,24 @@
     align-items: center;
     width: 100%;
     padding-right: 50px;
+    z-index: 49;
+}
+
+@media screen and (min-width: 768px) {
+    .profile{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+    .profile{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
 }
 

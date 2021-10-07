@@ -9,6 +9,7 @@
   display: flex;
   flex-grow: 1;
   border-right: 1px solid #F3F3F3;
+  z-index: 99;
 }
 
 .inner-sidenav {
@@ -149,4 +150,10 @@
 
 .dropdown-menu {
   min-width: fit-content !important;
+}
+
+@media screen and (max-width: 768px) {
+  .aside-nav{
+    display: none;
+  }
 }
