@@ -1,14 +1,14 @@
 .side-nav {
   position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
   background-color: #ffffff;
   height: 100vh;
   width: 213px;
   display: flex;
   flex-grow: 1;
-  border-right: 1px solid #F3F3F3;
+  border-right: 1px solid #f3f3f3;
   z-index: 99;
 }
 
@@ -91,7 +91,7 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.01em;
-  color: #B0B7C3;
+  color: #b0b7c3;
   /* margin-top: 10px; */
 }
 .inner-item-text-active {
@@ -152,8 +152,112 @@
   min-width: fit-content !important;
 }
 
+/* mobile sidebar */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 99; 
+  top: 0;
+  background: #343a40; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.log_out {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.mobile_profile {
+  display: flex;
+  align-items: center;
+}
+
+.mobile_names {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.mobile_user_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.0175em;
+  color: #fafbfc;
+}
+
+.mobile_company_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #fafbfc;
+}
+
+.mobile_side_footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.0073em;
+  color: #b0b7c3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+  /*  */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #fafbfc;
+}
+
+.sidenav {
+  right: 0;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.sidenav {
+  right: 0;
+}
+/* end mobile sidebar */
+
 @media screen and (max-width: 768px) {
-  .aside-nav{
+  .side-nav {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  .aside-nav {
     display: none;
   }
 }
