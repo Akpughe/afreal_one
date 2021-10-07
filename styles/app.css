@@ -78,6 +78,67 @@ td {
   text-transform: capitalize;
   color: #ffab00;
 }
+.pill_r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 130px;
+  height: 28px;
+  background: #ffe6e0;
+  border-radius: 8px;
+  /* text */
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ff5630;
+}
+.pill_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 130px;
+  height: 28px;
+  background: #e5f6ef;
+  border-radius: 8px;
+  /* text */
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #38cb89;
+}
+.pill_u {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  width: 130px;
+  height: 28px;
+  background-color: #ECF7FF;
+  border-radius: 8px;
+  /* text */
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #4c89b5;
+}
+
+.action_cover {
+  display: flex;
+}
 
 .action {
   font-family: Avenir Next;
@@ -86,4 +147,6 @@ td {
   font-size: 14px;
   line-height: 19px;
   color: #8a94a6;
+
+  margin-right: 15px;
 }
