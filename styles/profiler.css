@@ -209,6 +209,10 @@ input {
   padding-right: 20px;
 }
 
+.half_width{
+  width: 50% !important;
+}
+
 
 .form_one_label {
   display: flex;
@@ -267,6 +271,37 @@ input {
   line-height: 20px;
   letter-spacing: 0.01em;
   color: #B0B7C3;
+}
+
+.prop_sug{
+  display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.prop_suggestion_text{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #4E5D78;
+}
+.swipe_left_text{
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-decoration-line: underline;  
+  color: #4C89B5;
 }
 @media screen and (min-width: 768px) {
   
@@ -327,12 +362,17 @@ input {
     color: #ffffff;
   }
 
+  .button_:hover{
+    color: #ffffff !important;
+
+  }
+
   .button_p {
     background: #F3F3F3;
     margin-right: 10px;
     border-radius: 8px;
     padding: 20px 35px;
-    color: white;
+    /* color: white; */
     border: none;
     /* text */
     font-family: 'Poppins', sans-serif;
@@ -344,6 +384,10 @@ input {
     color: #B0B7C3;
   }
 
+  .button_p:hover{
+    color: #B0B7C3 !important;
+  }
+
   .button_cover {
     display: flex;
     flex-direction: row;
@@ -353,7 +397,15 @@ input {
     padding-bottom: 50px;
   }
 
+  .prop_sug{
+    padding-right: 0px;
+  }
+
   .outer_rect{
     display: none;
+  }
+
+  .half_width{
+    width: 100% !important;
   }
 }

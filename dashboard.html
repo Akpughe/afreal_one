@@ -258,7 +258,7 @@
           >
         </div>
         <div class="inner-item-cover">
-          <div class="mobile_profile" style="margin-bottom: 20px;">
+          <div class="mobile_profile" style="margin-bottom: 20px">
             <svg
               width="56"
               height="56"
@@ -277,7 +277,9 @@
           </div>
         </div>
         <div class="inner-item-cover">
-          <span class="mobile_side_footer">© Afreal Limited | All Right reserve</span>
+          <span class="mobile_side_footer"
+            >© Afreal Limited | All Right reserve</span
+          >
         </div>
       </div>
     </div>
@@ -559,12 +561,81 @@
             </div>
           </div>
           <div class="card_three">
-            <div class="card_details" style="margin-left: 20px">
+            <div
+              class="card_details"
+              style="margin-left: 20px"
+              data-bs-toggle="modal"
+              data-bs-target="#mortgage"
+            >
               <span class="card_three_label">Click</span>
               <span class="card_three_text">Apply for mortgage</span>
             </div>
           </div>
         </div>
+
+        <!-- mortgage-application -->
+        <div
+          class="modal fade"
+          id="mortgage"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog"
+            style="display: flex; justify-content: center"
+          >
+            <div
+              class="modal-content"
+              style="height: fit-content; border-radius: 16px"
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  padding: 0px 20px;
+                  padding-top: 20px;
+                "
+              >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Mortgage Application
+                </h5>
+              </div>
+              <div class="modal-body mort-body">
+                <div class="major-b">
+                  <!-- 1 -->
+                  <div class="info-cate-active">
+                    <span>personal information</span>
+                  </div>
+                  <!-- 2 -->
+                  <div class="info-cate">
+                    <span>employment information</span>
+                  </div>
+                  <!-- 3 -->
+                  <div class="info-cate">
+                    <span>financial information</span>
+                  </div>
+                  <!-- 4 -->
+                  <div class="info-cate">
+                    <span>property request</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end mortgage-application -->
 
         <div class="cr_cover">
           <!-- 1 -->
