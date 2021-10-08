@@ -331,6 +331,38 @@
 .modal-body{
   max-width: 600px!important;
   margin: 0 auto;
+  padding: 0px !important;
+}
+
+.form_one_input_new{
+  /* Primary / White */
+
+background: #FFFFFF;
+/* Grey / Grey #3 */
+
+border: 1px solid #EFEFEF;
+box-sizing: border-box;
+border-radius: 4px;
+
+font-family: Avenir Next;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+display: flex;
+align-items: center;
+
+/* Grey / Grey #1 */
+
+color: #8D9091;
+}
+
+.button_center{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
 }
@@ -437,12 +469,21 @@
     margin-top: 15px;
     flex: 1;
   }
+
+  .button_center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 
 @media (min-width: 576px){
 .modal-dialog {
     max-width: 756px !important;
-    margin: 1.75rem auto;
+    /* margin: 1.75rem auto; */
+}
+.modal-body{
+  max-width: 600px !important ;
 }
 }
