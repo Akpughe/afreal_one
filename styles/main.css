@@ -1047,6 +1047,46 @@ a {
     padding: 20px 0px;
     z-index: 99;
   }
+
+  .navbar-header {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+    display: flex;
+    /* background: #343a40; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+    z-index: 99;
+  }
+
+  .nav-logo img {
+    width: 35px;
+  }
+
+  .logo-text {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .a_button svg {
+    display: none;
+  }
+
+  .a_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px;
+    width: fit-content;
+    height: 44px;
+    background: none;
+    border-radius: 8px;
+  }
+
   .nav_item {
     display: none;
   }
@@ -1309,6 +1349,70 @@ a {
   .modal-body {
     max-width: auto !important;
     margin: 0 auto;
+  }
+
+  .sign_body {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .sign_card {
+    display: flex;
+    justify-content: center;
+    width: 327px;
+    /* height: 673px; */
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 0px;
+  }
+
+  .form-f {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google_sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(46, 106, 240, 0.1);
+    border-radius: 8px;
+    width: 260px;
+    height: 48px;
+  }
+
+  .crt_p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #c1c7d0;
+    width: 260px;
+  }
+
+  .or_div::before {
+    content: '';
+    width: 113px;
+    height: 0px;
+    border: 1px solid #f3f3f3;
+    display: flex;
+  }
+  
+  .or_div::after {
+    content: '';
+    width: 113px;
+    height: 0px;
+    border: 1px solid #f3f3f3;
+    display: flex;
   }
 }
 

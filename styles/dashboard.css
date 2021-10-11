@@ -349,14 +349,29 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 24px;
-/* or 171% */
-
 display: flex;
 align-items: center;
-
-/* Grey / Grey #1 */
-
 color: #8D9091;
+}
+
+.cr_header_2 span{
+  font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: #4d5c78;
+}
+
+.cr_header_2 b{
+  font-family: Inter;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: #4C89B5;
 }
 
 .button_center{
