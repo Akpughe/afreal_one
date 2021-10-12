@@ -336,6 +336,19 @@ a {
   color: #aaa;
   transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
+.custom-field .placeholder2 {
+  position: absolute;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 28px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
 .custom-field .show {
   display: flex;
   justify-content: flex-end;
@@ -399,8 +412,30 @@ a {
   width: fit-content;
   background-color: white !important;
 }
+.custom-field.one input.dirty + .placeholder2,
+.custom-field.one input:not(:placeholder-shown) + .placeholder2,
+.custom-field.one input:focus + .placeholder2 {
+  top: 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4e5d78;
+  width: fit-content;
+  background-color: white !important;
+}
 
 .placeholder {
+  display: flex !important;
+  min-height: 1em;
+  vertical-align: left;
+  cursor: text !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  padding: 0px 5px;
+}
+.placeholder2 {
   display: flex !important;
   min-height: 1em;
   vertical-align: left;

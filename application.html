@@ -33,8 +33,9 @@
             <span class="user_name">Maxwell Edobor</span>
             <small class="company_name">Company Name</small>
           </div>
-          <div style="margin-bottom: 10px">
+          <div class="dropdown" style="margin-bottom: 10px" >
             <svg
+            id="dropdownMenuButton1" data-bs-toggle="dropdown"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -49,6 +50,10 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#" style="color: tomato;">Logout</a></li>
+             
+            </ul>
           </div>
         </div>
         <div class="menu" onclick="openNav()">
@@ -438,7 +443,8 @@
                 <td>12 JAN, 2021</td>
                 <td class="td-text"><div class="pill_p">Under Review</div></td>
                 <td class="td-text">
-                  <div class="action">
+                  <div class="action" style="cursor: pointer;"  data-bs-toggle="modal"
+                  data-bs-target="#view">
                     <svg
                       class="svg-icon"
                       width="20"
@@ -464,6 +470,289 @@
           </table>
         </div>
 
+        <!-- View Modal -->
+        <div
+            class="modal fade"
+            id="view"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-two" id="printableArea">
+              <div class="modal-content modal-content-one">
+                <div
+                  class="modal-header"
+                  style="justify-content: center !important"
+                >
+                  <h5
+                    class="modal-title"
+                    id="exampleModalLabel"
+                    style="
+                      font-style: normal;
+                      font-weight: bold;
+                      font-size: 16px;
+                      line-height: 19px;
+                    "
+                  >
+                    REF : MOR-RUN453005 - Mortgage Application
+                  </h5>
+                  <!-- <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button> -->
+                </div>
+                <div class="modal-body-two">
+                  <!-- 1 -->
+                  <div class="img_major" style="display: flex">
+                    <div class="img_detials">
+                      <img
+                        class="user_img"
+                        src="./images//Rectangle 24.png"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="general_user_info img_major_info"
+                    >
+                      <div class="bg_head">
+                        <span class="bg_text">Personal Information</span>
+                      </div>
+                      <div class="user_info_body" style="margin-top: 20px">
+                        <div class="info_detials">
+                          <h6 class="info_h6">Title</h6>
+                          <span class="info_span">Mr</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">First Name</h6>
+                          <span class="info_span">Johnson</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Last Name</h6>
+                          <span class="info_span">Samuel</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Other Name</h6>
+                          <span class="info_span">Prudent</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Date of Birth</h6>
+                          <span class="info_span">03/04/1993</span>
+                        </div>
+                      </div>
+                      <div class="user_info_body" style="margin-top: 20px">
+                        <div class="info_detials">
+                          <h6 class="info_h6">Sex</h6>
+                          <span class="info_span">Male</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Nationality</h6>
+                          <span class="info_span">Nigerian</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">State</h6>
+                          <span class="info_span">Lagos</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Place of Birth</h6>
+                          <span class="info_span">Ikeja</span>
+                        </div>
+                        <div class="info_detials">
+                          <h6 class="info_h6">Profession</h6>
+                          <span class="info_span">Accountant</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    class="general_user_info"
+                    style="width: 100%; margin-top: 30px"
+                  >
+                    <div class="bg_head">
+                      <span class="bg_text">Contact Information</span>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">House Address</h6>
+                        <span class="info_span">13 shomolu ikeja, Lagos</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Email Address</h6>
+                        <span class="info_span">Johnson@gmail.com</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Phone Number</h6>
+                        <span class="info_span">+23470123456789</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Other Phone Number</h6>
+                        <span class="info_span">+23470123456789</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div
+                    class="general_user_info"
+                    style="width: 100%; margin-top: 30px"
+                  >
+                    <div class="bg_head">
+                      <span class="bg_text">Other Personal Information</span>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">Current Apartment Status</h6>
+                        <span class="info_span">Rented</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Others</h6>
+                        <span class="info_span">--</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Annual Rent</h6>
+                        <span class="info_span">N 300,000.00</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Marital Status</h6>
+                        <span class="info_span">Prudent</span>
+                      </div>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">Name of Next-of-kin</h6>
+                        <span class="info_span">John Samuel</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Next-of-kin’s Relationship</h6>
+                        <span class="info_span">Brother</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Next-of-kin’s Age</h6>
+                        <span class="info_span">21 years</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Next-of-kin’s Address</h6>
+                        <span class="info_span">Address here</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    class="general_user_info"
+                    style="width: 100%; margin-top: 30px"
+                  >
+                    <div class="bg_head">
+                      <span class="bg_text">Employment Information</span>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">Company Name</h6>
+                        <span class="info_span">Netflix</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Company Email</h6>
+                        <span class="info_span">info@netflix.com</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Employer’s Phone Number</h6>
+                        <span class="info_span">+23470123456789</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Employers Address</h6>
+                        <span class="info_span">13 shomolu ikeja, Lagos</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div
+                    class="general_user_info"
+                    style="width: 100%; margin-top: 30px"
+                  >
+                    <div class="bg_head">
+                      <span class="bg_text">Financial Information</span>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">Employment Income (Annual)</h6>
+                        <span class="info_span">N 1,200,000.00</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">
+                          Employment Income (Monthly Gross)
+                        </h6>
+                        <span class="info_span">N100,000.00</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Employment Income (Monthly Net)</h6>
+                        <span class="info_span">N93,500.00</span>
+                      </div>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">
+                          Estimated Monthly Living Expenses
+                        </h6>
+                        <span class="info_span">N 50,000.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div
+                    class="general_user_info"
+                    style="width: 100%; margin-top: 30px"
+                  >
+                    <div class="bg_head">
+                      <span class="bg_text">Loan Information</span>
+                    </div>
+                    <div class="user_info_body" style="margin-top: 20px">
+                      <div class="info_detials">
+                        <h6 class="info_h6">Equity Contribution</h6>
+                        <span class="info_span">N 75,000.00</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Loan Amount</h6>
+                        <span class="info_span">N100,000,000.00</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Loan Tenure</h6>
+                        <span class="info_span">20 Years</span>
+                      </div>
+                      <div class="info_detials">
+                        <h6 class="info_h6">Employers Guarantee</h6>
+                        <span class="info_span">--</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal-footer"
+                  style="
+                    border-top: none;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <button
+                    type="button"
+                    class="btn btn_print"
+                    onclick="printDiv('printableArea')"
+                  >
+                    Print
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn_close"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End View Modal -->
+
         <div class="res_table_cover">
           <div class="res_table">
             <!-- 1 -->
@@ -484,7 +773,8 @@
             <!-- 4 -->
             <div class="res_table_">
               <span class="res_table_label">Action</span>
-              <div class="action res_info">
+              <div class="action res_info" data-bs-toggle="modal"
+              data-bs-target="#view">
                 <svg
                   class="svg-icon"
                   width="20"

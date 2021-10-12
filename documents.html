@@ -33,8 +33,9 @@
             <span class="user_name">Maxwell Edobor</span>
             <small class="company_name">Company Name</small>
           </div>
-          <div style="margin-bottom: 10px">
+          <div class="dropdown" style="margin-bottom: 10px" >
             <svg
+            id="dropdownMenuButton1" data-bs-toggle="dropdown"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -49,6 +50,10 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#" style="color: tomato;">Logout</a></li>
+             
+            </ul>
           </div>
         </div>
         <div class="menu" onclick="openNav()">

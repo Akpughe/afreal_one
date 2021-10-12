@@ -32,8 +32,9 @@
             <span class="user_name">Maxwell Edobor</span>
             <small class="company_name">Company Name</small>
           </div>
-          <div style="margin-bottom: 10px">
+          <div class="dropdown" style="margin-bottom: 10px" >
             <svg
+            id="dropdownMenuButton1" data-bs-toggle="dropdown"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -48,6 +49,10 @@
                 stroke-linejoin="round"
               />
             </svg>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#" style="color: tomato;">Logout</a></li>
+             
+            </ul>
           </div>
         </div>
         <div class="menu" onclick="openNav()">
@@ -560,7 +565,7 @@
               <span class="card_two_fig">₦ 1,200,000</span>
             </div>
           </div>
-          <div class="card_three">
+          <div class="card_three" style="cursor: pointer;">
             <div
               class="card_details"
               style="margin-left: 20px"
@@ -584,7 +589,7 @@
           aria-hidden="true"
         >
           <div
-            class="modal-dialog"
+            class="modal-dialog modal-dialog-one"
             style="display: flex; justify-content: center"
           >
             <div
@@ -637,75 +642,75 @@
                     <!-- {/* 1 */} -->
                     <div class="form_one" style="padding-top: 30px">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Firstname"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Firstname</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Lastname"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Lastname</span>
                         </label>
                       </div>
                     </div>
                     <!-- 2 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Middle name"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Middle name</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Mother’s maiden name"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Mother’s maiden name</span>
                         </label>
                       </div>
                     </div>
                     <!-- 3 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Email" 
-                            style="border: 1px solid #EFEFEF"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" " 
+                          style="border: 1px solid #EFEFEF"
                           />
+                          <span class="placeholder2">Email</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Phone number"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Phone number</span>
                         </label>
                       </div>
                     </div>
@@ -714,149 +719,149 @@
                       className="flex w-full mt-2"
                       style="display: flex; width: 100%; margin-top: 20px"
                     >
-                      <label class="form_one_label">
-                        <!-- <span className="font-semibold">Email</span> -->
+                      <label class="form_one_label custom-field one">
                         <input
-                          class="form_one_input form_one_input_new address"
-                          type="text"
-                          placeholder="Address"
-                          style="border: 1px solid #efefef"
+                        class="form_one_input form_one_input_new address"
+                        type="text"
+                        placeholder=" "
+                        style="border: 1px solid #efefef"
                         />
+                        <span class="placeholder2">Address</span>
                       </label>
                     </div>
                     <!-- {/* 5 */} -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Sex"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Sex</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Place of birth"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Place of birth</span>
                         </label>
                       </div>
                     </div>
                     <!-- 6 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Date of birth"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Date of birth</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Nationality"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Nationality</span>
                         </label>
                       </div>
                     </div>
                     <!-- 7 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="State of origin"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">State of origin</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Highest education qualification"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Highest education qualification</span>
                         </label>
                       </div>
                     </div>
                     <!-- 8 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Profession"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Profession</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Means of identification"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Means of identification</span>
                         </label>
                       </div>
                     </div>
                     <!-- 9 -->
                     <div class="form_one">
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="ID number"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">ID number</span>
                         </label>
                       </div>
                       <div class="form_one_sub">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Firstname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Date issued"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Date issued</span>
                         </label>
                       </div>
                       <div class="mb" style="flex: 1">
-                        <label class="form_one_label">
-                          <!-- <span className="font-semibold">Lastname</span> -->
+                        <label class="form_one_label custom-field one">
                           <input
-                            class="form_one_input form_one_input_new"
-                            type="text"
-                            placeholder="Expiration date"
-                            style="border: 1px solid #efefef"
+                          class="form_one_input form_one_input_new"
+                          type="text"
+                          placeholder=" "
+                          style="border: 1px solid #efefef"
                           />
+                          <span class="placeholder2">Expiration date</span>
                         </label>
                       </div>
                     </div>
