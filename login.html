@@ -43,15 +43,16 @@
       <div class="sign_card">
         <div class="sign_content">
           <h4 class="crt_acct">Welcome back, Login</h4>
-          <p class="crt_p">
-            Good to have you back 😃
-          </p>
+          <p class="crt_p">Good to have you back 😃</p>
 
           <form action="" class="form-f">
             <div class="one">
               <label class="custom-field one">
                 <input type="email" placeholder=" " />
                 <span class="placeholder">Email</span>
+                <div class="error">
+                  <small class="error-message">Error message</small>
+                </div>
               </label>
             </div>
             <div class="one">
@@ -59,16 +60,22 @@
                 <input type="password" placeholder=" " />
                 <span class="placeholder">Password</span>
                 <span class="show">show</span>
+                <div class="error">
+                  <small class="error-message">Error message</small>
+                </div>
               </label>
             </div>
-            <div style="display: flex; justify-content: flex-end; width: 100%;">
-                <a class="forgot_p">Forgot Password?</a>
+            <div style="display: flex; justify-content: flex-end; width: 100%">
+              <a class="forgot_p">Forgot Password?</a>
             </div>
             <div class="btn_div">
               <button class="form_btn">LOGIN</button>
             </div>
             <div class="login_here">
-              <p>Don't have an account? <a href="./signup.html" class="log">REGISTER</a></p>
+              <p>
+                Don't have an account?
+                <a href="./signup.html" class="log">REGISTER</a>
+              </p>
             </div>
           </form>
         </div>

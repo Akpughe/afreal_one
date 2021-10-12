@@ -291,7 +291,18 @@ a {
   text-align: center;
   color: #4c88b5;
 }
-
+.error{
+  display: flex;
+  justify-content: flex-start;
+}
+.error-message {
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #c5292a;
+}
 .log:hover {
   color: #4c88b5;
 }
@@ -1441,7 +1452,7 @@ a {
     border: 1px solid #f3f3f3;
     display: flex;
   }
-  
+
   .or_div::after {
     content: '';
     width: 113px;
