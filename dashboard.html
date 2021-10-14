@@ -428,9 +428,43 @@
 
         <div class="card_container">
           <div class="card_one">
-            <div class="card_details">
+            <div class="card_details" style="margin-top: 20px;">
               <span class="card_one_text">Total loanable amount</span>
               <span class="card_one_fig">₦ 53,040,050</span>
+              <div
+                style="
+                  position: relative;
+                  width: fit-content;
+                  bottom: 75px;
+                  left: 220px;
+                "
+                type="button"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="bottom"
+                data-bs-content="Here is some helpful explainer text to assist the user in understanding what Total loanable amount  is all about"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.99998 1.04183C14.9416 1.04183 18.9583 5.0585 18.9583 10.0002C18.9583 14.9418 14.9416 18.9585 9.99998 18.9585C5.05831 18.9585 1.04165 14.9418 1.04165 10.0002C1.04165 5.05849 5.05831 1.04183 9.99998 1.04183ZM9.99998 17.7085C14.25 17.7085 17.7083 14.2502 17.7083 10.0002C17.7083 5.75016 14.25 2.29183 9.99998 2.29183C5.74998 2.29183 2.29165 5.75016 2.29165 10.0002C2.29165 14.2502 5.74998 17.7085 9.99998 17.7085Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M10 8.54183C10.3417 8.54183 10.625 8.82516 10.625 9.16683L10.625 13.3335C10.625 13.6752 10.3417 13.9585 10 13.9585C9.65833 13.9585 9.375 13.6752 9.375 13.3335L9.375 9.16683C9.375 8.82516 9.65833 8.54183 10 8.54183Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M9.99998 5.8331C10.1083 5.8331 10.2166 5.8581 10.3166 5.89977C10.4166 5.94144 10.5083 5.99977 10.5916 6.07477C10.6666 6.15811 10.725 6.24144 10.7666 6.34977C10.8083 6.44977 10.8333 6.5581 10.8333 6.66644C10.8333 6.77477 10.8083 6.88311 10.7666 6.98311C10.725 7.08311 10.6666 7.17477 10.5916 7.25811C10.5083 7.33311 10.4166 7.39144 10.3166 7.43311C10.1166 7.51644 9.88331 7.51644 9.68331 7.43311C9.58331 7.39144 9.49165 7.33311 9.40831 7.25811C9.33331 7.17477 9.27498 7.08311 9.23331 6.9831C9.19165 6.8831 9.16665 6.77477 9.16665 6.66644C9.16665 6.5581 9.19165 6.44977 9.23331 6.34977C9.27498 6.24144 9.33331 6.15811 9.40831 6.07477C9.49165 5.99977 9.58331 5.94144 9.68331 5.89977C9.78331 5.8581 9.89165 5.8331 9.99998 5.8331Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </div>
             <svg
               class="svg-icon-left"
@@ -1338,8 +1372,15 @@
       </div>
     </div>
 
+    <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/mobileSidebar.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+    </script>
     <script>
       var slider = document.getElementById('slider');
       var output = document.getElementById('output');

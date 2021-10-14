@@ -513,7 +513,7 @@ div.sliderContainer {
 #range {
   -webkit-appearance: none;
   width: 100%;
-  background: #D6D8E7;
+  background: #d6d8e7;
   height: 12px;
 }
 #range:focus {
@@ -547,17 +547,17 @@ div.sliderContainer {
   animate: 0.2s;
   background: linear-gradient(
     90deg,
-    #4C89B5 var(--range-progress),
+    #4c89b5 var(--range-progress),
     #dee4ec var(--range-progress)
   );
   border-radius: 1rem;
 }
 #range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border: 2px solid #4C89B5;
+  border: 2px solid #4c89b5;
   box-shadow: 0 1px 3px rgba(0, 0, 255, 0.3);
   border-radius: 50%;
-  background: #F7F7FC;
+  background: #f7f7fc;
   cursor: pointer;
   height: 32px;
   width: 32px;
@@ -599,6 +599,38 @@ div.sliderContainer {
   border-top-color: #ecf7ff;
 }
 /* silder 2 */
+
+.popover {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(441px, 242px, 0px);
+  margin-left: 230px !important;
+  max-width: 511px !important;
+  width: 511px !important;
+  height: 116px;
+
+  background: #ffffff;
+  border-radius: 16px !important;
+  border: none !important;
+}
+
+.popover-arrow {
+  position: absolute;
+  left: -230px !important;
+  /* right: 30px !important; */
+  transform: translate3d(60px, 0px, 0px);
+}
+
+.popover-body {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  color: #323b4b;
+}
 
 /* end slider */
 @media screen and (min-width: 768px) {
@@ -735,6 +767,21 @@ div.sliderContainer {
     width: 100%;
     margin-left: 0px;
     margin-top: 30px;
+  }
+
+  .popover {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(441px, 242px, 0px);
+    margin-left: 100px !important;
+    max-width: auto !important;
+    width: auto !important;
+    height: auto;
+
+    background: #ffffff;
+    border-radius: 16px !important;
+    border: none !important;
   }
 }
 
